@@ -9,11 +9,23 @@ let boxTop = box.offsetTop;
 let boxLeft = box.offsetLeft;
 
 
-let colors = [];
-for (let i = 0; i < 360; i += 30) {
-    colors.push(`hsl(${i}, 100%, 50%)`);
-}
+let colors = [
+    'rgb(255, 0, 0)',
+    'rgb(255, 127, 0)',
+    'rgb(255, 255, 0)',
+    'rgb(127, 255, 0)',
+    'rgb(0, 255, 0)',
+    'rgb(0, 255, 127)',
+    'rgb(0, 255, 255)',
+    'rgb(0, 127, 255)',
+    'rgb(0, 0, 255)',
+    'rgb(127, 0, 255)',
+    'rgb(255, 0, 255)',
+    'rgb(255, 0, 127)'
+];
+
 let colorIndex = 0;
+let colorChangeInterval = 2500 / colors.length;
 
 function animateBox() {
     let boxWidth = box.offsetWidth;
@@ -35,16 +47,16 @@ function animateBox() {
     box.style.left = boxLeft + 'px';
     box.style.top = boxTop + 'px';
 
-    changeColor();
+    // changeColor();
 
     requestAnimationFrame(animateBox);
 }
 
-function changeColor() {
-    colorIndex = (colorIndex + 1) % colors.length;
-
-    box.style.backgroundColor = colors[colorIndex];
-}
+// function changeColor() {
+//     colorIndex = (colorIndex + 1) % colors.length;
+//     box.style.backgroundColor = colors[colorIndex];
+//     setTimeout(changeColor, colorChangeInterval);
+// }
 
 function adjustBoxPosition() {
     let boxWidth = box.offsetWidth;
