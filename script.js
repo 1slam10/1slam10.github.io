@@ -9,38 +9,40 @@ let boxTop = box.offsetTop;
 let boxLeft = box.offsetLeft;
 
 
-let colors = [
-    'rgb(255, 0, 0)',
-    'rgb(255, 127, 0)',
-    'rgb(255, 255, 0)',
-    'rgb(127, 255, 0)',
-    'rgb(0, 255, 0)',
-    'rgb(0, 255, 127)',
-    'rgb(0, 255, 255)',
-    'rgb(0, 127, 255)',
-    'rgb(0, 0, 255)',
-    'rgb(127, 0, 255)',
-    'rgb(255, 0, 255)',
-    'rgb(255, 0, 127)'
-];
+// let colors = [
+//     'rgb(255, 0, 0)',
+//     'rgb(255, 127, 0)',
+//     'rgb(255, 255, 0)',
+//     'rgb(127, 255, 0)',
+//     'rgb(0, 255, 0)',
+//     'rgb(0, 255, 127)',
+//     'rgb(0, 255, 255)',
+//     'rgb(0, 127, 255)',
+//     'rgb(0, 0, 255)',
+//     'rgb(127, 0, 255)',
+//     'rgb(255, 0, 255)',
+//     'rgb(255, 0, 127)'
+// ];
 
-let colorIndex = 0;
-let colorChangeInterval = 2500 / colors.length;
+// let colorIndex = 0;
+// let colorChangeInterval = 2500 / colors.length;
 
 function animateBox() {
     let boxWidth = box.offsetWidth;
     let boxHeight = box.offsetHeight;
 
     let deviceWidth = window.innerWidth;
-    let deviceHeight = document.querySelector("main").offsetHeight;
+    let deviceHeight = main.offsetHeight;
 
     boxLeft += xAcceleration;
     boxTop += yAcceleration;
 
     if (boxLeft + boxWidth >= deviceWidth || boxLeft <= 0) {
+        adjustBoxPosition();
         xAcceleration *= -1;
     }
     if (boxTop + boxHeight >= deviceHeight || boxTop <= 0) {
+        adjustBoxPosition();
         yAcceleration *= -1;
     }
 
