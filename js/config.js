@@ -21,6 +21,11 @@ const config = {
             icon: "fab fa-instagram"
         },
         {
+            name: "GitHub",
+            url: "https://github.com/1slam10",
+            icon: "fab fa-github"
+        },
+        {
             name: "LinkedIn",
             url: "https://linkedin.com/in/islam-adilkhan",
             icon: "fab fa-linkedin"
@@ -31,10 +36,4 @@ const config = {
             icon: "fas fa-envelope"
         }
     ]
-
-        // {
-        //     name: "GitHub",
-        //     url: "https://github.com/1slam10",
-        //     icon: "fab fa-github"
-        // },
 };
