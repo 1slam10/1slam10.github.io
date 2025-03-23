@@ -11,24 +11,24 @@ const config = {
     // Social media links
     links: [
         {
-            name: "LinkedIn",
-            url: "https://linkedin.com/in/islam-adilkhan",
-            icon: "fab fa-linkedin"
-        },
-        {
-            name: "GitHub",
-            url: "https://github.com/1slam10",
-            icon: "fab fa-github"
+            name: "Telegram",
+            url: "https://t.me/islamchique",
+            icon: "fab fa-telegram"
         },
         {
             name: "Instagram",
             url: "https://instagram.com/islamchique",
             icon: "fab fa-instagram"
         },
+        // {
+        //     name: "GitHub",
+        //     url: "https://github.com/1slam10",
+        //     icon: "fab fa-github"
+        // },
         {
-            name: "Telegram",
-            url: "https://t.me/islamchique",
-            icon: "fab fa-telegram"
+            name: "LinkedIn",
+            url: "https://linkedin.com/in/islam-adilkhan",
+            icon: "fab fa-linkedin"
         },
         {
             name: "Email",
