@@ -1,35 +1,67 @@
+
+
+
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
     <title>Islam Adilkhan</title>
-    <link rel="stylesheet" href="./style.css">
+    <meta name="description"
+        content="Developer. Philantropist. Growth Hungry Nerd. Crazy af self-aware dreamer neuron. Alive Machine Learning Model. Friend.">
+    <meta name="author" content="Islam Adilkhan">
+    <meta name="keywords"
+        content="Islam Adilkhan, Developer, Philantropist, Growth Hungry Nerd, Crazy af self-aware dreamer neuron, Alive Machine Learning Model, Friend">
+
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
     <link rel="icon" href="./assets/favicon.png" type="image/x-icon">
 
     <meta property="og:url" content="https://islamadilkhan.me" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Islam Adilkhan." />
-    <meta property="og:description" content="Developer. Philantropist. Growth Hungry Nerd. Crazy af self-aware dreamer neuron. Alive Machine Learning Model. Friend." />
+    <meta property="og:description"
+        content="Developer. Philantropist. Growth Hungry Nerd. Crazy af self-aware dreamer neuron. Alive Machine Learning Model. Friend." />
     <meta property="og:image" content="./assets/preview-img.png" />
 </head>
 
 <body>
-    <header>
-        <img src="/assets/spinning_cat.gif" alt="Sweet spinning_cat" class="spinning-cat">
-        Website is under development. <br /><br /> Ислам аға is doing his best. <br /><br />  Keep calm, sookah!
-    </header>
-    <main>
-        <div class="box">
-            <a href="https://www.google.com">islamchique</a>
-        </div>
-    </main>
-    <footer>
-        Made with <span style="color:red; margin-inline: 10px;">&#10084; </span> by 1slam10
-    </footer>
-    <script src="./script.js"></script>
-</body>
+    <div class="container">
+        <div class="profile-card">
+            <!-- System theme detection is handled automatically via JavaScript -->
 
+            <div class="avatar-container">
+                <img src="assets/avatar.jpeg" alt="Profile picture" class="avatar">
+            </div>
+
+            <div class="bio-section">
+                <h1>John Doe</h1>
+                <p class="tagline">Software Developer | Open Source Enthusiast</p>
+                <div class="bio">
+                    <!-- Bio paragraphs will be inserted here dynamically -->
+                </div>
+            </div>
+
+            <!-- Links container - populated by JavaScript from config.js -->
+            <div class="links-container">
+                <!-- Links will be dynamically inserted here -->
+            </div>
+
+            <footer>
+                <p>&copy; <span id="currentYear"></span> | Made with <i class="fas fa-heart"></i></p>
+            </footer>
+        </div>
+    </div>
+
+    <!-- Load config first, then the script that uses it -->
+    <script src="js/config.js"></script>
+    <script src="js/script.js"></script>
+</body>
 </html>
