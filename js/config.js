@@ -2,7 +2,7 @@
 const config = {
     // Personal information
     name: "Islam Adilkhan",
-    tagline: "Backend Engineer | AI Enthusiast",
+    tagline: "Backend Engineer | STEM Enthusiast",
     bio: [
         "use ya brain & go big",
         "crazy af growth hungry self-aware neuron",
@@ -20,11 +20,6 @@ const config = {
             url: "https://instagram.com/islamchique",
             icon: "fab fa-instagram"
         },
-        // {
-        //     name: "GitHub",
-        //     url: "https://github.com/1slam10",
-        //     icon: "fab fa-github"
-        // },
         {
             name: "LinkedIn",
             url: "https://linkedin.com/in/islam-adilkhan",
@@ -36,4 +31,10 @@ const config = {
             icon: "fas fa-envelope"
         }
     ]
+
+        // {
+        //     name: "GitHub",
+        //     url: "https://github.com/1slam10",
+        //     icon: "fab fa-github"
+        // },
 };
